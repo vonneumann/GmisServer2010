@@ -1,0 +1,905 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76B87D75-7BFB-45A0-87D4-6150ACC388FF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>BusinessRules</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>BusinessRules</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>BusinessRules.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>BusinessRules.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.5.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessEntity\Appraisement.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\Bank.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\CheckRecord.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\CommitteemanOpinion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\CommonQuery.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\Conference.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\ConfTrial.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\CooperateOpinion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\CorpDefect.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\CorproationAccess.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\Guaranty.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\Holiday.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\IntentLetter.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\Investigation.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\JobPeriod.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\LoanNotice.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\OppositeGuaranteeAssurer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\Pawn.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\PawnCredit.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\PostAndResponsibility.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\Process.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\Project.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\ProjectAccountDetail.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\ProjectContractCarElement.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\ProjectContractChattelElement.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\ProjectContractElement.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\ProjectContractEstateElement.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\ProjectCorporation.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\ProjectCounterClaim.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\ProjectEndCase.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\ProjectExpandDate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\ProjectGuaranteeFormAdditional.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\ProjectOpinion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\ProjectResponsible.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\ProjectSignature.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\ProjectTask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\ProjectTaskAttendee.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\RefundCertificate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\ReturnReceipt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\SignaturePlan.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\TerminateReport.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\TracePlan.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\UserPost.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntity\WorkLog.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CreditEvaluate\Credit.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CreditEvaluate\FinanceAnalyse.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CreditEvaluate\QualityEvaluation.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CreditEvaluate\QuantityEvaluation.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\AlarmCode.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\AlarmType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\Branch.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\Conclusion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\ConferenceRoom.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\CooperateOrganization.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\CorporationAccount.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\CorporationType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\CorporatioRelationType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\Currency.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\DdGuarantyStatus.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\District.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\FileTemplate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\GuaranteeLetter.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\GuaranteeLetterType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\GuaranteeLetterUsage.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\GuarantyStatus.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\IndustryType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\InvestForm.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\Item.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\LoanChargeManner.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\LoanForm.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\LoanProvideForm.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\LoanType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\Material.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\Money.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\OppositeGuaranteeForm.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\Phase.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\ProjectAccount.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\ProjectDocument.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\ProjectFile.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\ProjectGuaranteeForm.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\ProjectOrganization.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\ProprietorshipType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\RecommendType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\RecordType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\RefundType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\ReimburseType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\RiskClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\Role.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\ServiceType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\Staff.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\TaskTemplate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\Team.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\TechnologyType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\TerminateType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\TOrganization.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\User.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\WorkflowType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryEntity\WorkType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ErrException\BusinessErr.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ErrException\DataBaseErr.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ErrException\ModCommFunction.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ErrException\WorkFlowErr.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SysParameter\SysParameter .vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web References\OAWorkflowXYDB\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\OAWorkflow\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WebserviceCgmisForOA\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\IApplyTools.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ICondition.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\IFlowTools.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImpAddRegent.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplAddRefundPlan.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplAddRefundPlanExp.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplAddValuator.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplAllowAccept.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplApplicationPath.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplApplyCount.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplAuditingAppraise.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplCancelClaim.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplCheckRepayFully.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplCheckValidateReviewFee.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplCheckValidateReviewFeeEx.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplChgRefundRecordRole.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplChkApply.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplChkApplyExp.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplChkServiceType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplCommon.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplCreateCancelProject.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplCreateReviewPause.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplDelCancelProject.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplDeleteTimingAlert.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplDeleteTimingTask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplEndLetterIntentUpdate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplEndModifyConclusion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplEndProject.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplEndProjectAppraise.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplEndReturn.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplEndReviewGuarantee.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplEndUpdateGuarantee.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplFindTeamHeader.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplFreezeProject.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplGetBussinessProcess.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplGetBussinessProcessEx.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplGuaranteeFee.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplHandoverRegister.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIncomePayout.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplInitialCapitialPath.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplInitialCapitialPathExp.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplInsertConfTrial.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsAccept.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsAssignValuator.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsAssignValuatorExp.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsAssignValuator_Update.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsAudit.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsBalanceReviewFee.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsCashLossReview.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsDespositFee.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsDespositFeeEx.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsDespositFeeExExp.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsDespositFeeExp.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsFinishedReturn.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsGuaranteeFee.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsGuaranteeFeeExp.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsGuaranteeFeeSmall.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsProjectFinished.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsRecommendAffrim.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsRecommendAffrimExp.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsRecordBankReply.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsReturnGuaranteeFee.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsStartAffirmTask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsStartAffirmTaskExp.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsValidateFraternity.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsValidateImpawned.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsValidateInGage.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsValidateInsurance.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplLessThanApplyNum.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplLoanMsg.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplMoreThanApplyNum.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplPauseCurrentProcess.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplReceiveReviewFee.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplRefundDebtInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplResumeTask .vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplSendCosslossReviewMsg.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplSendEndValuationMsg.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplSendGuaranteeChargeMsg.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplSendHandoverMsg.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplSendMakeContractForBankMsg.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplSendMakeContractMsg.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplSendMsgToManagerA.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplSendReviewFeeChargeMsg.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplSendServiceChargeMsg.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplSetAppAsManagerA.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplSetCheckContractPerson.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplSetLawer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplSetManager.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplSetManagerA.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplSetRecordPerson.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplSetSmallTimingTask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplSetXXBHLawer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplSetXXBHLawerEx.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplStartAferGuaranteeTask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplStartSubsequentActivity.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplStartSubsequentReg.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplTrialFee.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplUMGetBussinessProcess.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplUnFreezeProject.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplUpdateMeetServiceType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplValidateCancelProjectScale.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplValidateLetterScale.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplValidateLoanScale.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplValidateProjectScale.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplValidateReviewFee.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplValidateUnfreezeGuaranty.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplValidateUnfreezeGuarantyEx.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\TimeServerLog.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\TimingServer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WfMessagesTemplate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WfProjectMessages.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WfProjectPrompt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WfProjectTask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WfProjectTaskAttendee.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WfProjectTaskTransfer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WfProjectTimingTask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WfProjectTrack.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WfTaskRoleTemplate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WfTaskTemplate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WfTaskTransferTemplate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WfTimingTaskTemplate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\WorkFlow.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\ImplIsValidateFinancingConsultingFee.vb" />
+    <Compile Include="WorkFlow\ImplIsFinancingConsultingFee.vb" />
+    <Compile Include="WorkFlow\ImplOAReviewConclusion.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.80.84/webservice_cgmis/serviceOA.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WebserviceCgmisForOA\</RelPath>
+      <UpdateFromURL>http://192.168.80.84/webservice_cgmis/serviceOA.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BusinessRules_WebserviceCgmisForOA_ServiceOA</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://192.168.80.89:8080//services/WorkflowService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\OAWorkflow\</RelPath>
+      <UpdateFromURL>http://192.168.80.89:8080//services/WorkflowService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BusinessRules_OAWorkflow_WorkflowService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://192.168.80.89:8080//services/WorkflowServiceForXYDB%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\OAWorkflowXYDB\</RelPath>
+      <UpdateFromURL>http://192.168.80.89:8080//services/WorkflowServiceForXYDB%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BusinessRules_OAWorkflowXYDB_WorkflowServiceForXYDB</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\OAWorkflowXYDB\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\OAWorkflowXYDB\WorkflowBaseInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OAWorkflowXYDB\WorkflowRequestInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OAWorkflowXYDB\WorkflowRequestLog.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OAWorkflowXYDB\WorkflowServiceForXYDB.wsdl" />
+    <None Include="Web References\OAWorkflow\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\OAWorkflow\WorkflowBaseInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OAWorkflow\WorkflowRequestInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OAWorkflow\WorkflowRequestLog.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OAWorkflow\WorkflowService.wsdl" />
+    <Compile Include="WorkFlow\ImplOALoanApplication.vb" />
+    <None Include="Web References\WebserviceCgmisForOA\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WebserviceCgmisForOA\serviceOA.wsdl" />
+    <Compile Include="WorkFlow\ImplRecordSignatureCheck.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\ICSharpCode.SharpZipLib.dll" />
+    <None Include="Web References\WebserviceCgmisForOA\serviceOA.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

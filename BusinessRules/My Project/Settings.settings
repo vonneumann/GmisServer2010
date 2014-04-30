@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="BusinessRules_OAWorkflow_WorkflowService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.80.89:8080//services/WorkflowService</Value>
+    </Setting>
+    <Setting Name="BusinessRules_OAWorkflowXYDB_WorkflowServiceForXYDB" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.80.89:8080//services/WorkflowServiceForXYDB</Value>
+    </Setting>
+    <Setting Name="BusinessRules_WebserviceCgmisForOA_ServiceOA" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.80.84/webservice_cgmis/serviceOA.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

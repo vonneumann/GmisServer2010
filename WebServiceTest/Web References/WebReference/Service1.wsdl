@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://action.xingye/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://action.xingye/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types />
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="test" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="HelloWorldResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="finishedTaskSoapIn">
+    <wsdl:part name="workflowID" type="s:string" />
+    <wsdl:part name="projectID" type="s:string" />
+    <wsdl:part name="finishedTaskID" type="s:string" />
+    <wsdl:part name="finishedFlag" type="s:string" />
+    <wsdl:part name="userID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="finishedTaskSoapOut">
+    <wsdl:part name="finishedTaskResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="finishedTask">
+      <wsdl:input message="tns:finishedTaskSoapIn" />
+      <wsdl:output message="tns:finishedTaskSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://action.xingye/HelloWorld" style="rpc" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://action.xingye/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://action.xingye/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="finishedTask">
+      <soap:operation soapAction="http://action.xingye/finishedTask" style="rpc" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://action.xingye/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://action.xingye/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://action.xingye/HelloWorld" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="literal" namespace="http://action.xingye/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" namespace="http://action.xingye/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="finishedTask">
+      <soap12:operation soapAction="http://action.xingye/finishedTask" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="literal" namespace="http://action.xingye/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" namespace="http://action.xingye/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://192.168.80.48/WebServiceForOA/Service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://192.168.80.48/WebServiceForOA/Service1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
